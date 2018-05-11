@@ -1,12 +1,22 @@
 <template>
   <div class="test">
     <h1> It Works</h1>
+    <p>time mounted {{ timeMounted }}</p>
   </div>
 </template>
 
 <script>
+import moment from "moment";
 export default {
-  name: "TestComponent"
+  name: "TestComponent",
+  data () {
+      return {
+          timeMounted: ''
+      }
+  },
+  mounted () {
+      this.timeMounted = moment();
+  }
 };
 </script>
 

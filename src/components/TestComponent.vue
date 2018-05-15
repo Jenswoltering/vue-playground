@@ -9,13 +9,13 @@
 import moment from "moment";
 export default {
   name: "TestComponent",
-  data () {
-      return {
-          timeMounted: ''
-      }
+  data() {
+    return {
+      timeMounted: ""
+    };
   },
-  mounted () {
-      this.timeMounted = moment();
+  mounted() {
+    this.timeMounted = moment().format("HH/mm/ss/SSS");
   }
 };
 </script>
